@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela de login</title>
     <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="stylesheet" href="../estilos/tablet.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
 </head>
@@ -15,21 +16,27 @@
                 
             </div>
             <div id="formulario">
-                <h1>Login</h1>
-                <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta.</p>
-                <form action="" method="post" autocomplete="off">
+                <h1 class="hp">Login</h1>
+                <p class="hp">Seja bem-vindo(a) novamente. Faça login para acessar sua conta.</p>
+                <form action="#" method="post" autocomplete="on">
                    
-                    <p>
-                        <label for="iemail"><span class="material-icons">3p</span></label>
-                        <input type="email" name="email" id="iemail">
-                    </p>
-                    <p>
-                        <label for="isenha"> <span class="material-icons">key</span></label>
-                        <input type="password" name="senha" id="isenha">
-                    </p>
-                    <p>
-                        <input type="submit" value="Entrar">
-                    </p>
+                    
+                        <div class="campo">
+                            <span class="material-icons">person</span>
+                            <input class="lg" type="email" name="email" id="iemail" placeholder="Seu E-mail" required autocomplete="email">
+                            <label for="iemail">Login</label>
+                        </div>
+                    
+                    
+                        <div class="campo">
+                            <span class="material-icons">vpn_key</span>
+                            <input class="lg" type="password" name="senha" id="isenha" placeholder="Sua senha" autocomplete="current-password" required minlength="8" maxlength="20" >
+                            <label for="isenha">Senha</label>
+                        </div>
+                        <input  type="submit" value="Entrar">
+                        <a class="botao" href="#">Esqueci a senha <span class="material-icons">mail</span></a>
+
+                       
                 </form>
             </div>
         </section>
